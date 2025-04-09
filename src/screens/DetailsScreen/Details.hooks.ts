@@ -58,7 +58,7 @@ export const useDetailsData = (postId?: number) => {
 
       reverseWithIterations(
         data.body || '',
-        1000,
+        5000000,
         isMountedRef,
         reversedText => {
           setPost({ ...post, body: reversedText });
