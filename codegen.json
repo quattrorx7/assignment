@@ -1,0 +1,9 @@
+{
+  "schema": "https://dev-gambling.ligabet.com/graphql",
+  "documents": "./src/**/*.graphql",
+  "generates": {
+    "src/types/graphql.ts": {
+      "plugins": ["typescript", "typescript-operations"]
+    }
+  }
+}

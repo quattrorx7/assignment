@@ -1,3 +1,24 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ES6",
+    "jsx": "react-native",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "src/**/*", // Include all TypeScript files in the src folder
+    "node_modules/react-native/**/*.d.ts" // Include type definitions for React Native
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules folder
+    "ios", // Exclude iOS-specific files
+    "android" // Exclude Android-specific files
+  ]
 }
